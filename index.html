@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma Turystyczna</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #222 0%, #000 100%);
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+        .hero-section .cta-button {
+            background: #4CAF50;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .hero-section .cta-button:hover {
+            background: #3e8e41;
+        }
+        .about-section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .about-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .services-section {
+            padding: 70px 20px;
+            background: #222;
+        }
+        .services-section .service-card {
+            background: #151515;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .services-section .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .services-section .service-card p {
+            font-size: 1rem;
+        }
+        .services-section .service-card .icon {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .portfolio-section {
+            padding: 70px 20px;
+            background: #222;
+        }
+        .portfolio-section .portfolio-item {
+            background: #151515;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .portfolio-section .portfolio-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .portfolio-section .portfolio-item p {
+            font-size: 1rem;
+        }
+        .testimonials-section {
+            padding: 70px 20px;
+            background: #222;
+        }
+        .testimonials-section .testimonial {
+            background: #151515;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .testimonials-section .testimonial p {
+            font-size: 1rem;
+        }
+        .contact-section {
+            padding: 70px 20px;
+            background: #222;
+        }
+        .contact-section .contact-form {
+            background: #151515;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .contact-section .contact-form h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .contact-section .contact-form input, .contact-section .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-section .contact-form input[type="submit"] {
+            background: #4CAF50;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-section .contact-form input[type="submit"]:hover {
+            background: #3e8e41;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #1A1A1A;
+            color: #FFFFFF;
+        }
+        @media (max-width: 768px) {
+            .hero-section, .about-section, .services-section, .portfolio-section, .testimonials-section, .contact-section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section">
+        <h1>Wyprawiaj z nami niezapomniane wyprawy!</h1>
+        <p>Przygotujemy dla Ciebie najlepsze doświadczenia w turystyce.</p>
+        <a href="#contact" class="cta-button">Skontaktuj się z nami</a>
+    </header>
+    <section class="about-section">
+        <h2>O nas</h2>
+        <p>Jesteśmy firmą turystyczną specjalizującą się w organizacji przygód i wypraw. Nasza misja to przekazanie wam niezapomnianych doświadczeń i odkryć.</p>
+    </section>
+    <section class="services-section">
+        <h2>Nasze Usługi</h2>
+        <div class="service-card">
+            <i class="icon ion-md-mountains"></i>
+            <h3>Wyprawy Wspinackie</h3>
+            <p>Organizujemy wyprawy do szczytów w Polsce i poza granicami.</p>
+        </div>
+        <div class="service-card">
+            <i class="icon ion-md-boat"></i>
+            <h3>Wyprawy Morskie</h3>
+            <p>Przekazujemy wam niezapomniane doświadczenia na wodach.</p>
+        </div>
+        <div class="service-card">
+            <i class="icon ion-md-plane"></i>
+            <h3>Wyprawy Lotnicze</h3>
+            <p>Organizujemy loty nad wybrzeżami i w górach.</p>
+        </div>
+    </section>
+    <section class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <h3>Wyprawa Wspinacka</h3>
+            <p>Fotografia z wyprawy do szczytu.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Wyprawa Morska</h3>
+            <p>Fotografia z wyprawy na okręcie.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Wyprawa Lotnicza</h3>
+            <p>Fotografia z lotu nad wybrzeżem.</p>
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <h2>Opinie Klientów</h2>
+        <div class="testimonial">
+            <p>"Organizacja wyprawy była profesjonalna i zrozumiała. Wszystko odbyło się bez problemów."</p>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Twoje imię" required>
+            <input type="email" placeholder="Twój e-mail" required>
+            <textarea placeholder="Twoje wiadomość" required></textarea>
+            <input type="submit" value="Wyślij">
+        </form>
+    </section>
+    <footer class="footer">
+        <p>Copyright © 2023 Firma Turystyczna. Wszelkie prawa zastrzeżone.</p>
+        <p>Kontakt: +48 731 733 417 | vsatsyk1@gmail.com</p>
+    </footer>
+</body>
+</html>
